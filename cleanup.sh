@@ -14,7 +14,15 @@ rm -rf dist build
 # Remove Next.js cache
 echo "⚡ Clearing Next.js cache..."
 rm -rf .next
+echo "⚡ Clearing /home/user/.pub-cache/hosted cache..."
 
+rm -rf /home/user/.pub-cache/hosted
+echo "⚡ Clearing  /home/user/.gradle/caches  cache..."
+
+rm -rf /home/user/.gradle/caches
+echo "⚡ Clearing  /home/user/.pub-cache/hosted  cache..."
+
+rm -rf /home/user/.pub-cache/hosted
 # Remove node_modules
 echo "📁 Removing node_modules..."
 rm -rf node_modules
