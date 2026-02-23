@@ -16,6 +16,9 @@ echo "⚡ Clearing Next.js cache..."
 rm -rf .next
 echo "⚡ Clearing /home/user/.pub-cache/hosted cache..."
 
+
+
+
 rm -rf /home/user/.pub-cache/hosted
 echo "⚡ Clearing  /home/user/.gradle/caches  cache..."
 
@@ -26,7 +29,11 @@ rm -rf /home/user/.pub-cache/hosted
 # Remove node_modules
 echo "📁 Removing node_modules..."
 rm -rf node_modules
-
+echo "removing all cleanup "
+rm -rf /home/user/.gradle
+rm -rf /home/user/vms
+rm -rf /home/user/.pub-cache
+rm -rf /home/user/.androidsdkroot
 # Show disk usage
 echo "💾 Checking disk usage..."
 df -h
